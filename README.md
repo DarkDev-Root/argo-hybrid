@@ -53,7 +53,7 @@ Agar mesin Xray dan tunnel Argo dapat berjalan, kamu wajib memasukkan konfiguras
    * `CFIP` : *(Opsional, isi dengan Bug IP CDN jika ingin mengganti default `saas.sin.fan`)*
 4. Setelah variabel dimasukkan, Railway akan mendeteksi perubahan dan melakukan **Redeploy** secara otomatis. Tunggu hingga proses *build* selesai.
 
-### Langkah 3: Akses Web Dashboard (Opsional)
+### Langkah 3: Akses Web Dashboard
 Untuk melihat tampilan "Dashboard" dan memantau *traffic* server:
 1. Masuk ke tab **Settings** di aplikasi Railway kamu.
 2. Gulir ke bawah hingga menemukan bagian **Networking** > **Public Networking**.
@@ -66,8 +66,8 @@ Untuk melihat tampilan "Dashboard" dan memantau *traffic* server:
 
 Agar koneksi VPN via Cloudflare Argo berjalan lancar (Status: Healthy) dan bisa digunakan untuk *internetan*, kamu **wajib** mengatur sisi jaringan Cloudflare dengan tepat.
 
-### Langkah 1: Pengaturan Cloudflare Zero Trust
-1. Buka [Cloudflare Zero Trust](https://one.dash.cloudflare.com/) > **Networks** > **Tunnels**.
+### Langkah 1: Pengaturan Cloudflare Tunnels 
+1. Buka **Cloudflare** > **Networks** > **Tunnels**.
 2. Klik **Create a tunnel** (atau pilih tunnel yang sudah ada) dan salin **Token** instalasinya (masukkan ke variabel `ARGO_AUTH` di Railway).
 3. Masuk ke tab **Public Hostname**, lalu tambahkan rute baru:
    * **Public hostname:** Isi dengan domain milikmu (sama persis dengan variabel `ARGO_DOMAIN`).
