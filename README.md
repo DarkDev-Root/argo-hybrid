@@ -7,7 +7,7 @@
 ---
 
 ## ⚡ Fitur Utama
-* **Dashboard:** Antarmuka UI premium (Dark Mode, Glassmorphism, macOS-dots").
+* **Dashboard:** Antarmuka UI premium (macOS-inspired).
 * **Live Telemetry:** Monitoring System Uptime, CPU, RAM, dan Live Network Traffic Chart langsung dari Web.
 * **Hybrid Mode:** Mendukung konfigurasi Bug CDN & SNI.
 * **Multi-Protocol:** VLESS, VMESS, dan TROJAN via protokol WebSocket (WS).
@@ -86,8 +86,3 @@ Koneksi VPN menggunakan protokol WebSocket. Jika fitur ini mati atau terhalang s
 1. Buka menu **DNS > Records**.
 2. Cari *record* `CNAME` yang mengarah ke subdomain milikmu (sesuai `ARGO_DOMAIN`).
 3. Pastikan kolom **Target** mengarah ke `[Tunnel-ID].cfargotunnel.com` dan Proxy Status menyala dengan logo **Awan Oranye (Proxied)**.
-
----
-<div align="center">
-  <sub>Dibangun dan dioptimalkan oleh komunitas open-source. Bebas digunakan siapapun.</sub>
-</div>
